@@ -4,7 +4,6 @@ node_js:
 -12.18.3
 
 cache: yarn
-
 install: 
   -yarn install 
 
