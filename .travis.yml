@@ -8,12 +8,12 @@ install:
   -yarn install 
 
 script: 
--yarn test
--yarn run build
-
+  -yarn test
+  -yarn run build
+ 
 deploy: 
 provider: pages
 skip-cleanup: true
 github-token: $GITHUB_TOKEN
 on:
-  branch: develop
+  branch: gh-pages
