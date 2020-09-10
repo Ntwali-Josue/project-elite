@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,9 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "jest": "^26.4.2"
   }
 }

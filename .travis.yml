@@ -5,10 +5,10 @@ node_js:
 
 cache: yarn
 install: 
-  -yarn install 
+  -npm ci
 
 script: 
-  -yarn test
+  -npm run test:coveralls
   -yarn run build
  
 deploy: 
@@ -17,3 +17,17 @@ skip-cleanup: true
 github-token: $GITHUB_TOKEN
 on:
   branch: gh-pages
+
+notifications: 
+  email: false 
+
+  
+# language : node_js
+# node_js : "stable"
+# cache:
+#   directories:
+#     - node_modules
+# install : travis_wait 30 npm install
+# services :
+#   - postgresql
+# script : npm test
