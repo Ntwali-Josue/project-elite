@@ -4,8 +4,8 @@
   "description": "Within this repo we will be creating the pharmacy-locator web app",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/app.js",
-    "test": "mocha --require @babel/register 'src/**/**app.js'",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "test": "mocha --require @babel/register 'src/**/**.js'",
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
