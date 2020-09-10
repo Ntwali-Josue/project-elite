@@ -1,0 +1,12 @@
+{
+    "swagger" : "2.0",
+    "inf0": {
+        "version" : "1.0.0",
+        "title": "swagger-elite",
+        "description":"CRUD using nodejs and swagger",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    }
+}
