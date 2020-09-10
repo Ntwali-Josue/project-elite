@@ -1,5 +1,6 @@
 import Sequelize from 'sequelize';
 import dotenv from 'dotenv';
+// var chai = require('chai');
 
 dotenv.config({path:'../config.env'});
  

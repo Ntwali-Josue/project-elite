@@ -2,10 +2,10 @@
   "name": "project-elite",
   "version": "1.0.0",
   "description": "Within this repo we will be creating the pharmacy-locator web app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "nodemon --exec babel-node src/app.js",
+    "test": "mocha --require @babel/register 'src/**/**app.js'",
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
@@ -20,17 +20,27 @@
   },
   "homepage": "https://github.com/Ntwali-Josue/project-elite#readme",
   "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "chai-http": "^4.3.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.4",
+    "nyc": "^15.1.0",
     "path": "^0.12.7",
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
+    "postgres": "^1.0.2",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
+    "@babel/node": "^7.10.5",
+    "@babel/register": "^7.11.5",
+    "chai": "^4.2.0",
     "coveralls": "^3.1.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "mocha": "^8.1.3"
   }
 }
