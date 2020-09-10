@@ -3,7 +3,8 @@ language: node_js
 node_js:
 -12.18.3
 
-cache: yarn
+cache: npm
+
 install: 
   -npm ci
 
@@ -16,12 +17,12 @@ provider: pages
 skip-cleanup: true
 github-token: $GITHUB_TOKEN
 on:
-  branch: gh-pages
+  branch: master
 
 notifications: 
   email: false 
 
-  
+
 # language : node_js
 # node_js : "stable"
 # cache:
