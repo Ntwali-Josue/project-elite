@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/app.js",
-    "test": "mocha --require @babel/register 'src/**/**.js'",
+    "test": "nyc --reporter-html --reporter=text mocha --require @babel/register --timeout 20000 --exit src/test/*.js",
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
@@ -41,6 +41,7 @@
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "jest": "^26.4.2",
-    "mocha": "^8.1.3"
+    "mocha": "^8.1.3",
+    "mocha-lcov-reporter": "^1.3.0"
   }
 }

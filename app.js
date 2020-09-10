@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.status(250).json({
-    status: 250,
+  res.status(200).json({
+    status: 200,
     message: "Pharmacy locator",
   });
 });
