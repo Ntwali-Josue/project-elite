@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/app.js",
-    "test": "nyc --reporter-html --reporter=text mocha --require @babel/register --timeout 30000 --exit src/test/*.js",
+    "test": "nyc  mocha --require @babel/register --timeout 3000 --exit src/test/*.js",
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
