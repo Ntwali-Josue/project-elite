@@ -33,7 +33,9 @@
     "pg-hstore": "^2.3.3",
     "postgres": "^1.0.2",
     "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
     "@babel/node": "^7.10.5",
